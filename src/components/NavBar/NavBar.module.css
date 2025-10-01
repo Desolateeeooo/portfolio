@@ -1,0 +1,16 @@
+.my_nav {
+	background-color: #18191A;
+	display: flex;
+	gap: 5px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 83px;
+}
+
+.my_link {
+	color: #FFF;
+	width: 156px;
+	height: 45px;
+}
