@@ -1,3 +1,6 @@
-.my-image {
+.image_container {
 	border-radius: 50%;
+	width: 345px;
+	height: 345px;
+	overflow: hidden;
 }
