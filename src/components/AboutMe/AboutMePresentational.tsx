@@ -10,7 +10,7 @@ function AboutMePresentational({ iconsIndexes }: AboutMePresentationalProps) {
 		<div className={styles.about_me_container}>
 			<div className={styles.image_container}>
 				<Image
-					src={"/static/images/me.jpeg"}
+					src={"/static/images/me_3.jpeg"}
 					alt="My picture"
 					width={345}
 					height={345}

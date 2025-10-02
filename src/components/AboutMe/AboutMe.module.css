@@ -1,8 +1,9 @@
 .about_me_container {
 	background-color: #3EA2EA;
-	height: 90vh;
+	height: 100vh;
 	display: flex;
 	gap: 100px;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
 }
 
 .image_container {
@@ -19,21 +20,23 @@
 	flex-direction: column;
 	background-color: #FFF;
 	border-radius: 20px;
-	font-family: "Rubik";
+	font-family: Arial, Helvetica, sans-serif;
 	width: 270px;
-	height: 530px;
-	margin-top: 84px;
+	height: 570px;
+	margin-top: 30px;
 	gap: 5px;
 }
 
 .my_stack h2 {
 	font-size: 2rem;
 	margin: 5px;
+	color: #1C89D8
 }
 
 .my_stack p {
 	font-size: 1.3rem;
 	margin: 5px;
+	line-height: 30px;
 }
 
 
