@@ -1,7 +1,11 @@
 import Image from "next/image";
 import styles from "@/components/AboutMe/AboutMe.module.css"
 
-function AboutMePresentational() {
+interface AboutMePresentationalProps {
+	iconsIndexes: number[]
+}
+
+function AboutMePresentational({ iconsIndexes }: AboutMePresentationalProps) {
 	return (
 		<div className={styles.about_me_container}>
 			<div className={styles.image_container}>
@@ -19,15 +23,19 @@ function AboutMePresentational() {
 						React, JS, TS, Git, GitHub, Redux,
 						Figma, CSS, SCSS, HTML, Next, PostgreSQL, SQL
 					</p>
-					<ul>
-						<li>
-							<Image 
-								src={""}
-								alt=""
-								width={75}
-								height={75}
-							/>
-						</li>
+					<ul className={styles.icons_list}>
+						{iconsIndexes && iconsIndexes.map((iconIndex) => {
+							return (
+								<li key={iconIndex}>
+									<Image
+										src={`/static/images/icons/icon_${iconIndex}.svg`}
+										alt={`library_icon_${iconIndex}`}
+										width={75}
+										height={75} />
+								</li>
+							)
+						})
+						}
 					</ul>
 				</section>
 			</div>

@@ -1,6 +1,8 @@
 .about_me_container {
 	background-color: #3EA2EA;
-	height: 70vh;
+	height: 90vh;
+	display: flex;
+	gap: 100px;
 }
 
 .image_container {
@@ -8,4 +10,43 @@
 	width: 345px;
 	height: 345px;
 	overflow: hidden;
+	margin-top: 84px;
+	margin-left: 91px;
+}
+
+.my_stack {
+	display: flex;
+	flex-direction: column;
+	background-color: #FFF;
+	border-radius: 20px;
+	font-family: "Rubik";
+	width: 270px;
+	height: 530px;
+	margin-top: 84px;
+	gap: 5px;
+}
+
+.my_stack h2 {
+	font-size: 2rem;
+	margin: 5px;
+}
+
+.my_stack p {
+	font-size: 1.3rem;
+	margin: 5px;
+}
+
+
+.icons_list {
+	display: grid;
+	list-style-type: none;
+	width: 500px;
+	height: 270px;
+	grid-template: 100px 100px 100px 100px / 90px 90px 90px;
+	margin: 5px;
+}
+
+.icons_list li {
+	width: 75px;
+	height: 75px;
 }
