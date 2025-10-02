@@ -1,3 +1,8 @@
+.about_me_container {
+	background-color: #3EA2EA;
+	height: 70vh;
+}
+
 .image_container {
 	border-radius: 50%;
 	width: 345px;
