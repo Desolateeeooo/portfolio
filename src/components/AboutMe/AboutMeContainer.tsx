@@ -3,7 +3,7 @@ import AboutMePresentational from "./AboutMePresentational";
 function AboutMeContainer() {
 	const iconsIndexes = []
 	
-	for (let i = 1; i <= 12; i++) {
+	for (let i = 1; i <= 13; i++) {
 		iconsIndexes.push(i)
 	}
 

@@ -18,9 +18,9 @@ function AboutMePresentational({ iconsIndexes }: AboutMePresentationalProps) {
 			</div>
 			<div className={styles.my_stack}>
 				<section>
-					<h2>Мой стэк:</h2>
+					<h2>Мой стэк</h2>
 					<p>
-						React, JS, TS, Git, GitHub, Redux,
+						React, JS, TS, Git, GitHub, Redux, Node.js
 						Figma, CSS, SCSS, HTML, Next, PostgreSQL, SQL
 					</p>
 					<ul className={styles.icons_list}>
@@ -37,6 +37,17 @@ function AboutMePresentational({ iconsIndexes }: AboutMePresentationalProps) {
 						})
 						}
 					</ul>
+				</section>
+				<section>
+					<h2>О себе</h2>
+					<p><span>Иван, начинающий Full-Stack Разработчик.</span> Увлекаюсь созданием доступных и производительных веб-приложений.
+						<br />
+						<br />
+						<span> Дополнительно с этим], занимаюсь проектированием Баз Данных, изучением СУБД и написанием запросов на SQL.</span></p>
+						<br />
+						<p>Благодаря вниманию к деталям и спокойствию, эффективно работаю даже в стрессовых ситуациях.</p>
+						<br />
+						<p><span>Свободно владею Английским языком, а так же изучаю Китайский.</span></p>
 				</section>
 			</div>
 		</div>

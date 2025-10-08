@@ -1,6 +1,6 @@
 .about_me_container {
 	background-color: #F8F4E9;
-	height: 100vh;
+	height: 120vh;
 	display: flex;
 	gap: 100px;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
@@ -11,26 +11,29 @@
 	width: 345px;
 	height: 345px;
 	overflow: hidden;
-	margin-top: 84px;
+	margin-top: 100px;
 	margin-left: 91px;
 }
 
 .my_stack {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	margin-top: 100px;
+	gap: 20px;
+}
+
+.my_stack section {
 	background-color: #FFF;
 	border-radius: 20px;
 	font-family: Arial, Helvetica, sans-serif;
-	width: 270px;
+	width: 400px;
 	height: 570px;
-	margin-top: 30px;
-	gap: 5px;
 }
 
 .my_stack h2 {
 	font-size: 2rem;
 	margin: 5px;
-	color: #542F0B
+	color: #542F0B;
 }
 
 .my_stack p {
@@ -40,13 +43,16 @@
 	color: #815222;
 }
 
+.my_stack span {
+	font-weight: bold;
+}
 
 .icons_list {
 	display: grid;
 	list-style-type: none;
-	width: 500px;
-	height: 270px;
-	grid-template: 100px 100px 100px 100px / 90px 90px 90px;
+	width: 400px;
+	height: 360px;
+	grid-template: 100px 100px 100px 100px / 90px 90px 90px 90px;
 	margin: 5px;
 }
 
