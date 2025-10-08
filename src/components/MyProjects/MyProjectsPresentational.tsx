@@ -5,7 +5,14 @@ function MyProjectsPresentational() {
 	return (
 		<div className={styles.projects_container}>
 			<h2>Мои проекты</h2>
-			<ProjectCardPresentational />
+			<section className={styles.projectsGallery}>
+				<ProjectCardPresentational />
+				<ProjectCardPresentational />
+				<ProjectCardPresentational />
+				<ProjectCardPresentational />
+				<ProjectCardPresentational />
+				<ProjectCardPresentational />
+			</section>
 		</div>
 	)
 }
