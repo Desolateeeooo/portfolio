@@ -1,6 +1,62 @@
+.about_me_container {
+	background-color: #F8F4E9;
+	height: 120vh;
+	display: flex;
+	gap: 100px;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+}
+
 .image_container {
 	border-radius: 50%;
 	width: 345px;
 	height: 345px;
 	overflow: hidden;
+	margin-top: 100px;
+	margin-left: 91px;
+}
+
+.my_stack {
+	display: flex;
+	flex-direction: row;
+	margin-top: 100px;
+	gap: 20px;
+}
+
+.my_stack section {
+	background-color: #FFF;
+	border-radius: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 400px;
+	height: 570px;
+}
+
+.my_stack h2 {
+	font-size: 2rem;
+	margin: 5px;
+	color: #542F0B;
+}
+
+.my_stack p {
+	font-size: 1.3rem;
+	margin: 5px;
+	line-height: 30px;
+	color: #815222;
+}
+
+.my_stack span {
+	font-weight: bold;
+}
+
+.icons_list {
+	display: grid;
+	list-style-type: none;
+	width: 400px;
+	height: 360px;
+	grid-template: 100px 100px 100px 100px / 90px 90px 90px 90px;
+	margin: 5px;
+}
+
+.icons_list li {
+	width: 75px;
+	height: 75px;
 }

@@ -1,12 +1,17 @@
 .my_nav {
-	background-color: #18191A;
+	background-color: #2A2A2A;
 	display: flex;
 	gap: 44px;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	height: 83px;
+	height: 60px;
+	position: fixed; /* Move this from .sticky to here */
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000; /* Ensure it stays above other content */
 }
 
 .my_link {
@@ -14,3 +19,5 @@
 	width: 156px;
 	height: 45px;
 }
+
+/* Remove the .sticky class or keep it for other uses */
