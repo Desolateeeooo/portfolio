@@ -2,6 +2,4 @@ function MyProjectsPresentational() {
 
 }
 
-export default MyProjectsPresentational() {
-	
-}
+export default MyProjectsPresentational;
