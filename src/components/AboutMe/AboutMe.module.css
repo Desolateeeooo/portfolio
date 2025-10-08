@@ -1,5 +1,5 @@
 .about_me_container {
-	background-color: #3EA2EA;
+	background-color: #F8F4E9;
 	height: 100vh;
 	display: flex;
 	gap: 100px;
@@ -30,13 +30,14 @@
 .my_stack h2 {
 	font-size: 2rem;
 	margin: 5px;
-	color: #1C89D8
+	color: #542F0B
 }
 
 .my_stack p {
 	font-size: 1.3rem;
 	margin: 5px;
 	line-height: 30px;
+	color: #815222;
 }
 
 
