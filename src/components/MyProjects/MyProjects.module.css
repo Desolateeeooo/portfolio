@@ -1,0 +1,8 @@
+.projects_container {
+	position: relative;
+	bottom: 200px;
+	z-index: 5;
+	margin: 90px;
+	font-size: 2rem;
+}
+
