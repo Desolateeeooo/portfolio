@@ -21,8 +21,8 @@
 .contact_card_grid_container {
     display: grid;
     gap: 50px;
-    grid-template-columns: 250px 250px 200px;
-    grid-auto-rows: auto;
+    grid-template: 75px / 320px 320px 300px;
+  
     text-align: left;
 }
 
@@ -38,6 +38,11 @@
 	transition: all 0.3s ease;
 	position: relative;
 	top: 30px;
+	display: flex;
+	gap: 20px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .contact_card span {
