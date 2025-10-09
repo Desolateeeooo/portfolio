@@ -12,6 +12,9 @@ export default function Home() {
 				<AboutMeContainer />
 				<MyProjectsPresentational />
 			</main>
+			<footer>
+				
+			</footer>
 		</div>
 	);
 }

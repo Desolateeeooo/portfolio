@@ -24,10 +24,26 @@
 
 .my_stack section {
 	background-color: #FFF;
-	border-radius: 20px;
 	font-family: Arial, Helvetica, sans-serif;
 	width: 400px;
 	height: 570px;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow:
+		0 8px 32px rgba(42, 15, 15, 0.15),
+		inset 0 1px 0 rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(230, 46, 46, 0.2);
+	transition: all 0.3s ease;
+	position: relative;
+}
+
+.my_stack section:hover,
+.image_container:hover {
+	transform: translateY(-8px);
+	box-shadow:
+		0 15px 40px rgba(230, 46, 46, 0.25),
+		inset 0 1px 0 rgba(255, 255, 255, 0.9);
+	border-color: rgba(230, 46, 46, 0.4);
 }
 
 .my_stack h2 {

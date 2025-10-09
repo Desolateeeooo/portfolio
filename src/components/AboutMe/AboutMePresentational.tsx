@@ -7,7 +7,7 @@ interface AboutMePresentationalProps {
 
 function AboutMePresentational({ iconsIndexes }: AboutMePresentationalProps) {
 	return (
-		<div className={styles.about_me_container}>
+		<div className={styles.about_me_container} id="about">
 			<div className={styles.image_container}>
 				<Image
 					src={"/static/images/me_3.jpeg"}
@@ -20,8 +20,10 @@ function AboutMePresentational({ iconsIndexes }: AboutMePresentationalProps) {
 				<section>
 					<h2>Мой стэк</h2>
 					<p>
+						<span>
 						React, JS, TS, Git, GitHub, Redux, Node.js
 						Figma, CSS, SCSS, HTML, Next, PostgreSQL, SQL
+						</span>
 					</p>
 					<ul className={styles.icons_list}>
 						{iconsIndexes && iconsIndexes.map((iconIndex) => {
@@ -43,7 +45,7 @@ function AboutMePresentational({ iconsIndexes }: AboutMePresentationalProps) {
 					<p><span>Иван, начинающий Full-Stack Разработчик.</span> Увлекаюсь созданием доступных и производительных веб-приложений.
 						<br />
 						<br />
-						<span> Дополнительно с этим, занимаюсь проектированием Баз Данных, изучением СУБД и написанием запросов на SQL.</span></p>
+						<span> Вместе с этим, занимаюсь проектированием Баз Данных, изучением СУБД и написанием запросов на SQL.</span></p>
 						<br />
 						<p>Благодаря вниманию к деталям и спокойствию, эффективно работаю даже в стрессовых ситуациях.</p>
 						<br />
