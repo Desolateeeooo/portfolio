@@ -7,7 +7,7 @@ function ProjectCardPresentational() {
 		<div className={styles.projectCard}>
 			<div className={styles.screenshotContainer}>
 				<Image
-					src={""}
+					src={"/"}
 					alt={"Project icon"}
 					width={350}
 					height={200}
