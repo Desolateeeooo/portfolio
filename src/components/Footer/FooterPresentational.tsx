@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function FooterPresentational() {
 	return (
-		<div className={styles.footer_container}>
+		<div className={styles.footer_container} id="contacts">
 			<div className={styles.contact_card_container}>
 				<h2>Связаться со мной</h2>
 				<section className={styles.contact_card_grid_container}>
