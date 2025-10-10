@@ -15,7 +15,7 @@ function FooterPresentational() {
 							height={75}
 						/>
 						<p>
-							<span>GitHub:</span> github.com/Desolateeeooo
+							<span>GitHub:</span> <br /> github.com/Desolateeeooo
 						</p>
 					</div>
 					<div className={styles.contact_card}>
@@ -26,7 +26,7 @@ function FooterPresentational() {
 							height={75}
 						/>
 						<p>
-							<span>Email:</span> ivan57goridko873@gmail.com
+							<span>Email:</span> <br /> ivan57goridko873@gmail.com
 						</p>
 					</div>
 					<div className={styles.contact_card}>
@@ -37,7 +37,7 @@ function FooterPresentational() {
 							height={75}
 						/>
 						<p>
-							<span>Telegram:</span> @desointj
+							<span>Telegram:</span> <br /> @desointj
 						</p>
 					</div>
 				</section>

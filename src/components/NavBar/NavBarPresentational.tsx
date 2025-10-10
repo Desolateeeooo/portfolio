@@ -1,14 +1,12 @@
-"use client"
-
-import Link from "next/link";
-import styles from "@/components/NavBar/NavBar.module.css"
+"use client";
+import styles from "@/components/NavBar/NavBar.module.css";
 
 interface NavBarPresentational {
 	pathname: string | null;
 	currentHash: string;
 }
 
-function NavBarPresentational({ pathname, currentHash }: NavBarPresentational) {
+function NavBarPresentational({ currentHash }: NavBarPresentational) {
 
 	return (
 		<nav className={styles.my_nav}>
@@ -25,7 +23,7 @@ function NavBarPresentational({ pathname, currentHash }: NavBarPresentational) {
 				<hr className={currentHash === "#contacts" ? styles.hr_active : styles.hr_not_active} />
 			</div>
 		</nav>
-	)
+	);
 }
 
 export default NavBarPresentational;

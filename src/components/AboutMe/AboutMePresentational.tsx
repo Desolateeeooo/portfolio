@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "@/components/AboutMe/AboutMe.module.css"
+import styles from "@/components/AboutMe/AboutMe.module.css";
 
 interface AboutMePresentationalProps {
 	iconsIndexes: number[]
@@ -35,7 +35,7 @@ function AboutMePresentational({ iconsIndexes }: AboutMePresentationalProps) {
 										width={75}
 										height={75} />
 								</li>
-							)
+							);
 						})
 						}
 					</ul>
@@ -53,7 +53,7 @@ function AboutMePresentational({ iconsIndexes }: AboutMePresentationalProps) {
 				</section>
 			</div>
 		</div>
-	)
+	);
 }
 
 export default AboutMePresentational;

@@ -1,13 +1,13 @@
 import AboutMePresentational from "./AboutMePresentational";
 
 function AboutMeContainer() {
-	const iconsIndexes = []
+	const iconsIndexes = [];
 	
 	for (let i = 1; i <= 13; i++) {
-		iconsIndexes.push(i)
+		iconsIndexes.push(i);
 	}
 
-	return <AboutMePresentational iconsIndexes={iconsIndexes}></AboutMePresentational>
+	return <AboutMePresentational iconsIndexes={iconsIndexes}></AboutMePresentational>;
 
 }
 

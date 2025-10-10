@@ -14,7 +14,7 @@ function MyProjectsPresentational() {
 				<ProjectCardPresentational />
 			</section>
 		</div>
-	)
+	);
 }
 
 export default MyProjectsPresentational;

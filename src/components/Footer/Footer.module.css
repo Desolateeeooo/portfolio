@@ -62,8 +62,9 @@
 	.contact_card_grid_container {
 		display: grid;
 		gap: 20px;
-		grid-template: repeat(3, 85px) / 320px;
+		grid-template: repeat(3, 85px) / 280px;
 		text-align: left;
+		justify-content: center;
 	}
 
 	.contact_card_container {
@@ -76,5 +77,6 @@
 
 	.contact_card {
 		gap: 5px;
+		font-size: 0.9rem;
 	}
 }
