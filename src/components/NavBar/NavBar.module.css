@@ -33,3 +33,10 @@
 .hr_not_active {
 	visibility: hidden;
 }
+
+@media only screen and (max-width: 400px) {
+	.my_nav {
+		gap: 15px;
+	}
+}
+
