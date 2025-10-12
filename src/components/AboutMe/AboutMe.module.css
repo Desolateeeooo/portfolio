@@ -71,7 +71,7 @@
 	list-style-type: none;
 	width: 400px;
 	height: 360px;
-	grid-template: repeat(4, 100px) / repeat(5, 90px);
+	grid-template: repeat(4, 100px) / repeat(4, 90px);
 	margin: 5px;
 }
 
@@ -239,5 +239,9 @@
 	.my_stack section {
 		width: 450px;
 		height: 600px;
+	}
+
+	.icons_list {
+		grid-template: repeat(4, 100px) / repeat(5, 90px);
 	}
 }
