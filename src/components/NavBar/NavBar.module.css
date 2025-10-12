@@ -7,17 +7,36 @@
 	align-items: center;
 	text-align: center;
 	height: 60px;
-	position: fixed; /* Move this from .sticky to here */
+	position: fixed; 
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 1000; /* Ensure it stays above other content */
+	z-index: 1000; 
 }
 
 .my_link {
 	color: #FFF;
 	width: 156px;
 	height: 45px;
+	font-weight: normal;
 }
 
-/* Remove the .sticky class or keep it for other uses */
+.my_link_active {
+	font-weight: bold;
+	color: #FFF;
+}
+
+.hr_active {
+	visibility: visible;
+}
+
+.hr_not_active {
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 400px) {
+	.my_nav {
+		gap: 15px;
+	}
+}
+
