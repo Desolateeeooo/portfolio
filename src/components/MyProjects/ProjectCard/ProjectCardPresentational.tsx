@@ -26,7 +26,7 @@ function ProjectCardPresentational() {
 				Посмотреть
 			</Link>
 		</div>
-	)
+	);
 }
 
 export default ProjectCardPresentational;
