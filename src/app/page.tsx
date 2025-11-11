@@ -8,16 +8,20 @@ import AboutMeNewContainer from '../components/AboutMeNew/AboutMeNewContainer';
 
 export default function Home() {
 	return (
-		<div>
-			<NavBarContainer />
-			<main>
-				{/* <AboutMeNewContainer /> */}
-				<AboutMeContainer />
-				<MyProjectsPresentational />
-			</main>
-			<footer>
+		<div className={styles.flex_container}>
+		<div id="invisible"></div>
+			<div className={styles.main_container}>
+				{/* <NavBarContainer /> */}
+				<main>
+					<AboutMeNewContainer />
+					{/* <AboutMeContainer /> */}
+					{/* <MyProjectsPresentational /> */}
+				</main>
+				{/* <footer>
 				<FooterPresentational />
-			</footer>
+			</footer> */}
+			</div>
+			<div id="invisible"></div>
 		</div>
 	);
 }

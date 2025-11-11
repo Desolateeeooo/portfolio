@@ -165,3 +165,19 @@ a.secondary {
     filter: invert();
   }
 } */
+
+.flex_container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.main_container {
+	background-color: #FBF5E0;
+	height: 84vh;
+	display: flex;
+	flex-direction: column;
+}
+
+#invisible {
+	display: none;
+}
