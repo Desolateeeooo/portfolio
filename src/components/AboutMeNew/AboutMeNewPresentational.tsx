@@ -19,7 +19,7 @@ function AboutMeNewPresentational({ iconsIndexes }: AboutMeNewPresentationalProp
 				</div>
 				<div className={styles.my_stack}>
 					<section>
-						<h2>Мой стэк</h2>
+						<h2>Мой стэк:</h2>
 						<p>
 							<span>
 								React, Redux, JS, TS, HTML, CSS, SCSS, CSS-in-JS, Express.js, Next.js, Node.js, SQL, PostgreSQL
@@ -45,12 +45,12 @@ function AboutMeNewPresentational({ iconsIndexes }: AboutMeNewPresentationalProp
 			<section className={styles.about_me_text}>
 				<h2>Обо мне</h2>
 				<p>
-					<span>Иван, начинающий Full-Stack Разработчик.</span>
+					<span>Иван, начинающий Full-Stack Разработчик. </span> 
 					Увлекаюсь созданием доступных и производительных веб-приложений.
 					<span> Я студент 3 курса НВГУ, факультета Информационных систем и технологий.</span>
 					<br />
 					<br />
-					Вместе с этим, активно занимаюсь математикой, спортом.
+					Вместе с этим, активно увлекаюсь математикой. 
 					Так же в последнее время изучаю интеллектуальный анализ данных с помощью средств языка Python.
 				</p>
 				<br />

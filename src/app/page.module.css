@@ -173,9 +173,18 @@ a.secondary {
 
 .main_container {
 	background-color: #FBF5E0;
-	height: 84vh;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
+	width: 850px;
+}
+
+.main_container main {
+	background-color: #FBF5E0;
+}
+
+.main_container footer {
+	width: 100%;
 }
 
 #invisible {
