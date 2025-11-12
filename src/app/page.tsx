@@ -11,7 +11,7 @@ export default function Home() {
 		<div className={styles.flex_container}>
 		<div id="invisible"></div>
 			<div className={styles.main_container}>
-				{/* <NavBarContainer /> */}
+				<NavBarContainer />
 				<main>
 					<AboutMeNewContainer />
 					{/* <AboutMeContainer /> */}
