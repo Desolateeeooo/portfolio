@@ -1,8 +1,13 @@
+import styles from "@/components/BreadCrumb/BreadCrumb.module.css";
+import Link from "next/link";
+
 function BreadCrumbPresentational() {
 	return (
-		<>
-			{"Projects > Project 1"}
-		</>
+		<div className={styles.breadCrumb_container}>
+			<Link href={"/"}>projects</Link>
+			{">"}
+			<Link href={"/projects/1"}>project 1</Link>
+		</div>
 	);
 }
 

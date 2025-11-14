@@ -1,7 +1,10 @@
 import ProjectGalleryPresentational from "./ProjectGalleryPresentational";
 
 function ProjectGalleryContainer() {
-	return <ProjectGalleryPresentational />;
+
+	const imageCount = [1, 2, 3, 4];
+
+	return <ProjectGalleryPresentational imageCount={imageCount}/>;
 }
 
 export default ProjectGalleryContainer;
