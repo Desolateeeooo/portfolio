@@ -1,6 +1,5 @@
 "use client";
 import styles from "@/components/NavBar/NavBar.module.css";
-import { useState, useEffect } from "react";
 
 interface NavBarPresentationalProps {
 	isActive: (targetHash: string) => boolean;

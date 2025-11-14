@@ -2,12 +2,12 @@ import Image from "next/image";
 import styles from "@/components/MyProjects/ProjectCard/ProjectCard.module.css";
 import Link from "next/link";
 
-function ProjectCardPresentational() {
+function ProjectCardPresentational({projectId}: { projectId: number }) {
 	return (
 		<div className={styles.projectCard}>
 			<div className={styles.screenshotContainer}>
 				<Image
-					src={"/"}
+					src={"/globe.svg"}
 					alt={"Project icon"}
 					width={350}
 					height={200}
@@ -19,10 +19,10 @@ function ProjectCardPresentational() {
 				<p>Placeholder for text</p>
 
 				<div className={styles.techStack}>
-					<p>React, JS, TS, Node.js</p>
+					<p>React, JS, Node.js, Express.js</p>
 				</div>
 			</div>
-			<Link href={""} className={styles.viewProjectLink}>
+			<Link href={`/projects/${projectId}`} className={styles.viewProjectLink}>
 				Посмотреть
 			</Link>
 		</div>
