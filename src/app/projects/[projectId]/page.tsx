@@ -1,5 +1,6 @@
 import styles from "@/app/projects/[projectId]/page.module.css";
 import BreadCrumbContainer from '../../../components/BreadCrumb/BreadCrumbContainer';
+import ProjectGalleryContainer from "@/components/ProjectGallery/ProjectGalleryContainer";
 
 async function ProjectGalleryPage({ params }: { params: { projectId: string } }) {
 	const { projectId } = await params;
@@ -11,6 +12,7 @@ async function ProjectGalleryPage({ params }: { params: { projectId: string } })
 				<main>
 					<BreadCrumbContainer />
 					<h1>Express project {projectId}</h1>
+					<ProjectGalleryContainer />
 				</main>
 				<div id="invisible"></div>
 			</div>
