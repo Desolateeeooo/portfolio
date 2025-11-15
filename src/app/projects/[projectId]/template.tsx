@@ -2,9 +2,9 @@ import { ReactNode } from "react";
 
 function ProjectGalleryTemplate({children}: {children : ReactNode}) {
   return (
-      <body>
+      <div>
         {children}
-      </body>
+      </div>
   );
 }
 
