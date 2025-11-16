@@ -1,14 +1,26 @@
 "use client";
-
-import { usePathname } from "next/navigation";
 import NavBarPresentational from "./NavBarPresentational";
-import { useHash } from "@/app/hooks/useHash";
+import { useEffect, useState } from "react";
 
 function NavBarContainer() {
-	const pathname = usePathname();
-	const currentHash = useHash();
+	const [currentHash, setCurrentHash] = useState<string | null>(null);
 
-	return <NavBarPresentational pathname={pathname} currentHash={currentHash} />;
+	useEffect(() => {
+		setCurrentHash(window.location.hash || null);
+
+		const handleHashChange = () => {
+			setCurrentHash(window.location.hash || null);
+		};
+
+		window.addEventListener('hashchange', handleHashChange);
+		return () => window.removeEventListener('hashchange', handleHashChange);
+	}, []);
+
+	const isActive = (targetHash: string) => {
+		return currentHash === targetHash;
+	};
+
+	return <NavBarPresentational isActive={isActive}/>;
 }
 
 export default NavBarContainer;

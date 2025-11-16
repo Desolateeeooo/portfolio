@@ -1,26 +1,40 @@
 "use client";
 import styles from "@/components/NavBar/NavBar.module.css";
 
-interface NavBarPresentational {
-	pathname: string | null;
-	currentHash: string;
+interface NavBarPresentationalProps {
+	isActive: (targetHash: string) => boolean;
 }
 
-function NavBarPresentational({ currentHash }: NavBarPresentational) {
+function NavBarPresentational({isActive}: NavBarPresentationalProps) {
 
 	return (
 		<nav className={styles.my_nav}>
 			<div>
-				<a href={"/#about"} className={currentHash === "#about" ? styles.my_link_active : styles.my_link}>О себе</a>
-				<hr className={currentHash === "#about" ? styles.hr_active : styles.hr_not_active} />
+				<a 
+					href="#about" 
+					className={isActive("#about") ? styles.my_link_active : styles.my_link}
+				>
+					О себе
+				</a>
+				<hr className={isActive("#about") ? styles.hr_active : styles.hr_not_active} />
 			</div>
 			<div>
-				<a href={"/#projects"} className={currentHash === "#projects" ? styles.my_link_active : styles.my_link}>Мои проекты</a>
-				<hr className={currentHash === "#projects" ? styles.hr_active : styles.hr_not_active} />
+				<a 
+					href="#projects" 
+					className={isActive("#projects") ? styles.my_link_active : styles.my_link}
+				>
+					Мои проекты
+				</a>
+				<hr className={isActive("#projects") ? styles.hr_active : styles.hr_not_active} />
 			</div>
 			<div>
-				<a href={"/#contacts"} className={currentHash === "#contacts" ? styles.my_link_active : styles.my_link}>Контакты</a>
-				<hr className={currentHash === "#contacts" ? styles.hr_active : styles.hr_not_active} />
+				<a 
+					href="#contacts" 
+					className={isActive("#contacts") ? styles.my_link_active : styles.my_link}
+				>
+					Контакты
+				</a>
+				<hr className={isActive("#contacts") ? styles.hr_active : styles.hr_not_active} />
 			</div>
 		</nav>
 	);

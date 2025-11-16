@@ -1,33 +1,39 @@
 .my_nav {
-	background-color: #2A2A2A;
+	background-color: var(--dragon-red);
 	display: flex;
-	gap: 44px;
+	gap: 65px;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	height: 60px;
-	position: fixed; 
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1000; 
+	min-height: 70px;
+	width: 850px;
 }
 
 .my_link {
-	color: #FFF;
+	color: var(--imperial-yellow);
 	width: 156px;
 	height: 45px;
 	font-weight: normal;
+	transition: color 0.3s ease;
 }
 
 .my_link_active {
 	font-weight: bold;
-	color: #FFF;
+	color: var(--rice-paper);
+	text-shadow: 0 0 10px var(--golden-accent);
+}
+
+.my_link:hover {
+	color: var(--golden-accent);
 }
 
 .hr_active {
 	visibility: visible;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, var(--imperial-yellow), transparent);
+	border: none;
+	margin: 5px 0 0 0;
 }
 
 .hr_not_active {
@@ -39,4 +45,3 @@
 		gap: 15px;
 	}
 }
-
